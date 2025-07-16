@@ -1,12 +1,37 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import RainEffect from '@/components/RainEffect';
+import Navbar from '@/components/Navbar';
+import HeroSection from '@/components/HeroSection';
+import ImpactSection from '@/components/ImpactSection';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background relative">
+      {/* Rain Effect */}
+      <RainEffect />
+      
+      {/* Navigation */}
+      <Navbar />
+      
+      {/* Main Content */}
+      <main className="relative z-10">
+        {/* Hero Section */}
+        <div id="home">
+          <HeroSection />
+        </div>
+        
+        {/* Impact Section */}
+        <div id="impact">
+          <ImpactSection />
+        </div>
+        
+        {/* Additional sections can be added here */}
+        <div id="about" className="h-screen flex items-center justify-center">
+          <div className="text-center">
+            <h2 className="text-4xl font-bold text-foreground mb-4">About Our Mission</h2>
+            <p className="text-xl text-muted-foreground">More content coming soon...</p>
+          </div>
+        </div>
+      </main>
     </div>
   );
 };
