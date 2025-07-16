@@ -1,14 +1,7 @@
 import { useEffect, useState } from 'react';
 
 const RainEffect = () => {
-  const [raindrops, setRaindrops] = useState<Array<{
-    id: number;
-    left: number;
-    animationDuration: number;
-    animationDelay: number;
-    height: number;
-    width: number;
-  }>>([]);
+  const [raindrops, setRaindrops] = useState([]);
 
   useEffect(() => {
     const createRaindrops = () => {

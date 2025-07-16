@@ -1,7 +1,7 @@
-import RainEffect from '@/components/RainEffect';
-import Navbar from '@/components/Navbar';
-import HeroSection from '@/components/HeroSection';
-import ImpactSection from '@/components/ImpactSection';
+import RainEffect from '@/components/RainEffect.jsx';
+import Navbar from '@/components/Navbar.jsx';
+import HeroSection from '@/components/HeroSection.jsx';
+import ImpactSection from '@/components/ImpactSection.jsx';
 
 const Index = () => {
   return (

@@ -1,13 +1,6 @@
-import { ReactNode } from 'react';
 import { cn } from '@/lib/utils';
 
-interface FloatingCardProps {
-  children: ReactNode;
-  className?: string;
-  delay?: number;
-}
-
-const FloatingCard = ({ children, className, delay = 0 }: FloatingCardProps) => {
+const FloatingCard = ({ children, className, delay = 0 }) => {
   return (
     <div
       className={cn(
